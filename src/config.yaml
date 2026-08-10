@@ -11,7 +11,7 @@ metadata:
   title:
     default: 净证-酒店保洁管理系统_客房质检软件
     template: '%s — 净证'
-  description: "让每一间客房的清洁，都有据可查。净证客房保洁质检系统，专为中小酒店设计，支持拍照提交、主管在线审核、一键生成报表。"
+  description: '让每一间客房的清洁，都有据可查。净证客房保洁质检系统，专为中小酒店设计，支持拍照提交、主管在线审核、一键生成报表。'
   robots:
     index: true
     follow: true

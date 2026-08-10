@@ -157,7 +157,7 @@ async function parseFormData(request: Request): Promise<ContactFormData> {
   const contentType = request.headers.get('content-type') || '';
 
   if (contentType.includes('application/json')) {
-    const json = await request.json() as Record<string, unknown>;
+    const json = (await request.json()) as Record<string, unknown>;
     return {
       name: String(json.name ?? ''),
       email: String(json.email ?? ''),
@@ -201,7 +201,10 @@ function jsonResponse(data: Record<string, unknown>, status: number = 200): Resp
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type PagesFunction<Env = any> = (context: { request: Request; env: Env }) => Promise<Response>;
 
-export const onRequestPost: PagesFunction<{ RESEND_API_KEY: string; EMAIL_DOMAIN: string; TO_EMAIL: string }> = async ({ request, env }) => {
+export const onRequestPost: PagesFunction<{ RESEND_API_KEY: string; EMAIL_DOMAIN: string; TO_EMAIL: string }> = async ({
+  request,
+  env,
+}) => {
   try {
     // --- 1. 解析请求数据 ---
     const data = await parseFormData(request);
@@ -253,20 +256,14 @@ export const onRequestPost: PagesFunction<{ RESEND_API_KEY: string; EMAIL_DOMAIN
 
     if (error) {
       console.error('[contact] Resend 发送失败:', error);
-      return jsonResponse(
-        { success: false, message: '邮件发送失败，请稍后再试。' },
-        500
-      );
+      return jsonResponse({ success: false, message: '邮件发送失败，请稍后再试。' }, 500);
     }
 
     console.log('[contact] 邮件发送成功, id:', resendData?.id);
     return jsonResponse({ success: true, message: '提交成功，我们会尽快与您联系！' });
   } catch (err) {
     console.error('[contact] 未预期错误:', err);
-    return jsonResponse(
-      { success: false, message: '服务器内部错误，请稍后再试。' },
-      500
-    );
+    return jsonResponse({ success: false, message: '服务器内部错误，请稍后再试。' }, 500);
   }
 };
 
