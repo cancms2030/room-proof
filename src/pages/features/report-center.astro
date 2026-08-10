@@ -1,0 +1,90 @@
+---
+import Layout from '~/layouts/Layout.astro';
+
+const frontmatter = {
+  title: '酒店保洁报表自动生成_清洁数据统计分析-净证',
+  description:
+    '净证自动生成酒店保洁数据报表：清洁完成率、返工率、人均效率一目了然。用数据驱动保洁管理决策。',
+};
+---
+
+<Layout {frontmatter}>
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <!-- H1 -->
+      <h1 class="text-3xl font-bold text-blue-700 md:text-4xl">
+        📊 一键生成保洁报表，用数据说话
+      </h1>
+      <p class="mt-4 text-lg text-gray-500">
+        告别手工统计，让酒店保洁管理从"凭感觉"升级为"看数据"
+      </p>
+
+      <hr class="my-12 border-gray-200" />
+
+      <!-- H2：四大看板 -->
+      <h2 class="text-2xl font-bold text-blue-700 md:text-3xl">
+        四大核心数据看板
+      </h2>
+      <div class="mt-8 grid gap-6 md:grid-cols-2">
+        <div class="rounded-xl border border-gray-100 p-6 shadow-sm">
+          <div class="text-4xl">📈</div>
+          <h3 class="mt-3 text-lg font-bold text-blue-700">清洁完成率</h3>
+          <p class="text-sm text-gray-500">
+            实时展示今日/本周/本月客房清洁完成进度，用趋势图直观呈现。
+          </p>
+        </div>
+        <div class="rounded-xl border border-gray-100 p-6 shadow-sm">
+          <div class="text-4xl">🔄</div>
+          <h3 class="mt-3 text-lg font-bold text-blue-700">返工率统计</h3>
+          <p class="text-sm text-gray-500">
+            自动统计哪些客房、哪些保洁员返工率最高，问题精准定位。
+          </p>
+        </div>
+        <div class="rounded-xl border border-gray-100 p-6 shadow-sm">
+          <div class="text-4xl">🏆</div>
+          <h3 class="mt-3 text-lg font-bold text-blue-700">保洁员效率排行</h3>
+          <p class="text-sm text-gray-500">
+            基于完成量、合格率、返工率等多维度数据，公平考核每位保洁员。
+          </p>
+        </div>
+        <div class="rounded-xl border border-gray-100 p-6 shadow-sm">
+          <div class="text-4xl">🧴</div>
+          <h3 class="mt-3 text-lg font-bold text-blue-700">耗材使用追踪</h3>
+          <p class="text-sm text-gray-500">
+            追踪每间客房清洁耗材消耗，有效控制运营成本。
+          </p>
+        </div>
+      </div>
+
+      <hr class="my-12 border-gray-200" />
+
+      <!-- H2：管理升级 -->
+      <h2 class="text-2xl font-bold text-blue-700 md:text-3xl">
+        从"凭感觉"到"看数据"的管理升级
+      </h2>
+      <div class="mt-6 grid gap-4 md:grid-cols-3">
+        <div class="text-center p-6">
+          <div class="text-3xl">😓</div>
+          <p class="mt-2 font-medium text-gray-400">凭感觉</p>
+          <p class="text-sm text-gray-400">"我觉得小王干得不错"</p>
+        </div>
+        <div class="flex items-center justify-center text-3xl text-gray-300">→</div>
+        <div class="text-center p-6 rounded-xl bg-blue-50 border border-blue-200">
+          <div class="text-3xl">📊</div>
+          <p class="mt-2 font-bold text-blue-700">看数据</p>
+          <p class="text-sm text-blue-600">"小王的合格率98%，返工率全组最低"</p>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="mt-12 text-center">
+        <a
+          href="/contact/"
+          class="inline-block rounded-lg bg-blue-600 px-10 py-4 text-lg font-semibold text-white transition-all hover:bg-blue-700 hover:shadow-lg"
+        >
+          🚀 预约演示，让管理更有底气
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -40,33 +40,24 @@ const generatePermalink = async ({
     .join('/');
 };
 
-const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> => {
+const getNormalizedPost = async (post: CollectionEntry<'blog'>): Promise<Post> => {
   const { id, data } = post;
   const { Content, remarkPluginFrontmatter } = await render(post);
 
   const {
-    publishDate: rawPublishDate = new Date(),
-    updateDate: rawUpdateDate,
+    pubDate: rawPublishDate = new Date(),
     title,
-    excerpt,
-    image,
+    description: excerpt,
+    heroImage: image,
     tags: rawTags = [],
-    category: rawCategory,
-    author,
     draft = false,
     metadata = {},
   } = data;
 
   const slug = cleanSlug(id);
   const publishDate = new Date(rawPublishDate);
-  const updateDate = rawUpdateDate ? new Date(rawUpdateDate) : undefined;
 
-  const category = rawCategory
-    ? {
-        slug: cleanSlug(rawCategory),
-        title: rawCategory,
-      }
-    : undefined;
+  const category = undefined;
 
   const tags = rawTags.map((tag: string) => ({
     slug: cleanSlug(tag),
@@ -79,7 +70,7 @@ const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> =
     permalink: await generatePermalink({ id, slug, publishDate, category: category?.slug }),
 
     publishDate: publishDate,
-    updateDate: updateDate,
+    updateDate: undefined,
 
     title: title,
     excerpt: excerpt,
@@ -87,21 +78,20 @@ const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> =
 
     category: category,
     tags: tags,
-    author: author,
+    author: undefined,
 
     draft: draft,
 
     metadata,
 
     Content: Content,
-    // or 'content' in case you consume from API
 
     readingTime: remarkPluginFrontmatter?.readingTime,
   };
 };
 
 const load = async function (): Promise<Array<Post>> {
-  const posts = await getCollection('post');
+  const posts = await getCollection('blog');
   const normalizedPosts = posts.map(async (post) => await getNormalizedPost(post));
 
   const results = (await Promise.all(normalizedPosts))

@@ -1,79 +1,197 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
-import HeroText from '~/components/widgets/HeroText.astro';
-import ContactUs from '~/components/widgets/Contact.astro';
-import Features2 from '~/components/widgets/Features2.astro';
+import Layout from '~/layouts/Layout.astro';
 
 const metadata = {
-  title: 'Contact',
+  title: '联系我们_免费试用酒店保洁管理系统-净证',
+  description:
+    '立即联系我们，免费试用净证客房保洁质检系统。14天免费试用，一对一指导，让您的酒店保洁管理更有证据、有标准、有数据。',
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- HeroText Widget ******************* -->
+  <section class="py-16 md:py-24 bg-white dark:bg-slate-900">
+    <div class="container mx-auto px-4 max-w-4xl">
 
-  <HeroText tagline="Contact" title="Let's Connect!" />
+      <!-- 页面标题 -->
+      <div class="mb-12 text-center">
+        <h1 class="text-3xl font-bold text-primary-600 md:text-4xl dark:text-primary-400">
+          🚀 立即开启有证据的保洁管理
+        </h1>
+        <p class="mt-4 text-lg text-gray-500 dark:text-gray-400">
+          留下您的联系方式，我们将在24小时内与您取得联系
+        </p>
+      </div>
 
-  <ContactUs
-    id="form"
-    title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
-    inputs={[
-      {
-        type: 'text',
-        name: 'name',
-        label: 'Name',
-      },
-      {
-        type: 'email',
-        name: 'email',
-        label: 'Email',
-      },
-    ]}
-    textarea={{
-      label: 'Message',
-    }}
-    disclaimer={{
-      label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
-    }}
-    description="Our support team typically responds within 24 business hours."
-  />
+      <!-- 表单 -->
+      <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-lg md:p-10 dark:border-gray-700 dark:bg-slate-800">
+        <form id="contactForm" class="space-y-6">
+          <!-- 姓名 -->
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
+              姓名 <span class="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              minlength="2"
+              placeholder="请输入您的姓名"
+              class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-secondary-500 focus:outline-none focus:ring-2 focus:ring-secondary-200 dark:border-gray-600 dark:bg-slate-700 dark:text-white dark:placeholder-gray-400"
+            />
+          </div>
 
-  <!-- Features2 Widget ************** -->
+          <!-- 邮箱 -->
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
+              邮箱 <span class="text-red-500">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="请输入您的邮箱"
+              class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-secondary-500 focus:outline-none focus:ring-2 focus:ring-secondary-200 dark:border-gray-600 dark:bg-slate-700 dark:text-white dark:placeholder-gray-400"
+            />
+          </div>
 
-  <Features2
-    title="We are here to help!"
-    items={[
-      {
-        title: 'General support',
-        description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
-      },
-      {
-        title: 'Contact sales',
-        description:
-          'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
-      },
-      {
-        title: 'Technical support',
-        description:
-          'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
-      },
-      {
-        title: 'Phone',
-        description: '+1 (234) 567-890',
-        icon: 'tabler:headset',
-      },
-      {
-        title: 'Email',
-        description: 'contact@support.com',
-        icon: 'tabler:mail',
-      },
-      {
-        title: 'Location',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
-        icon: 'tabler:map-pin',
-      },
-    ]}
-  />
+          <!-- 电话 -->
+          <div>
+            <label for="phone" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
+              电话
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="请输入您的电话（选填）"
+              class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-secondary-500 focus:outline-none focus:ring-2 focus:ring-secondary-200 dark:border-gray-600 dark:bg-slate-700 dark:text-white dark:placeholder-gray-400"
+            />
+          </div>
+
+          <!-- 酒店/公司 -->
+          <div>
+            <label for="company" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
+              酒店/公司名称
+            </label>
+            <input
+              type="text"
+              id="company"
+              name="company"
+              placeholder="请输入您所在的酒店或公司（选填）"
+              class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-secondary-500 focus:outline-none focus:ring-2 focus:ring-secondary-200 dark:border-gray-600 dark:bg-slate-700 dark:text-white dark:placeholder-gray-400"
+            />
+          </div>
+
+          <!-- 咨询内容 -->
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
+              咨询内容 <span class="text-red-500">*</span>
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              minlength="10"
+              rows="5"
+              placeholder="请详细描述您的需求，例如：我们酒店有50间客房，想了解如何用系统管理保洁质量..."
+              class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-secondary-500 focus:outline-none focus:ring-2 focus:ring-secondary-200 dark:border-gray-600 dark:bg-slate-700 dark:text-white dark:placeholder-gray-400"
+            ></textarea>
+            <p class="mt-1 text-xs text-gray-400 dark:text-gray-500">至少10个字</p>
+          </div>
+
+          <!-- 防机器人陷阱（隐藏） -->
+          <input type="text" name="_gotcha" style="display:none;" tabindex="-1" autocomplete="off" />
+
+          <!-- 提交按钮 -->
+          <div>
+            <button
+              type="submit"
+              id="submitBtn"
+              class="w-full rounded-lg bg-secondary-500 px-6 py-4 text-lg font-semibold text-white transition-all hover:bg-secondary-600 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              提交咨询
+            </button>
+          </div>
+
+          <!-- 提交状态反馈 -->
+          <div id="formStatus" class="hidden text-center"></div>
+        </form>
+      </div>
+
+      <!-- 联系方式补充 -->
+      <div class="mt-8 text-center text-sm text-gray-400 dark:text-gray-500">
+        <p class="mb-2">📧 邮箱：<a href="mailto:cancms@163.com" class="text-secondary-500 hover:underline">cancms@163.com</a></p>
+        <p class="mb-2">💬 微信：<span class="text-secondary-500">ncp2025</span></p>
+        <p>🛒 淘宝店：<a href="https://shop485498494.taobao.com/" target="_blank" rel="noopener noreferrer" class="text-secondary-500 hover:underline">https://shop485498494.taobao.com/</a></p>
+      </div>
+    </div>
+  </section>
 </Layout>
+
+<!-- 表单提交JS -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contactForm') as HTMLFormElement;
+    const submitBtn = document.getElementById('submitBtn') as HTMLButtonElement;
+    const statusDiv = document.getElementById('formStatus') as HTMLDivElement;
+
+    if (!form || !submitBtn || !statusDiv) return;
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      // 前端JS二次验证
+      const name = (document.getElementById('name') as HTMLInputElement).value.trim();
+      const email = (document.getElementById('email') as HTMLInputElement).value.trim();
+      const message = (document.getElementById('message') as HTMLTextAreaElement).value.trim();
+
+      if (!name || name.length < 2) {
+        showStatus('❌ 请填写您的姓名（至少2个字）', 'text-red-500');
+        return;
+      }
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        showStatus('❌ 请填写有效的邮箱地址', 'text-red-500');
+        return;
+      }
+      if (!message || message.length < 10) {
+        showStatus('❌ 请详细描述您的需求（至少10个字）', 'text-red-500');
+        return;
+      }
+
+      // 禁用按钮，防止重复提交
+      submitBtn.disabled = true;
+      submitBtn.textContent = '提交中...';
+      statusDiv.className = 'hidden';
+
+      try {
+        const formData = new FormData(form);
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          body: formData,
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+          showStatus('✅ ' + result.message, 'text-green-500');
+          form.reset();
+        } else {
+          showStatus('❌ ' + result.message, 'text-red-500');
+        }
+      } catch (error) {
+        showStatus('❌ 网络错误，请稍后重试', 'text-red-500');
+        console.error('提交错误:', error);
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = '提交咨询';
+      }
+    });
+
+    function showStatus(text: string, className: string) {
+      statusDiv.className = 'mt-6 text-center text-lg font-medium ' + className;
+      statusDiv.textContent = text;
+    }
+  });
+</script>

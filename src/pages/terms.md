@@ -1,120 +1,98 @@
 ---
-title: 'Terms and Conditions'
+title: '服务条款'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Last updated_: January 06, 2023
+_最后更新日期_：2026年8月11日
 
-Please read these terms and conditions carefully before using Our Service.
+在使用本服务前，请仔细阅读以下服务条款。
 
-## Interpretation and Definitions
+## 释义与定义
 
-### Interpretation
+### 释义
 
-The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+本条款中首字母大写的词语，其含义在以下定义中予以规定。以下定义无论以单数或复数形式出现，均具有相同含义。
 
-### Definitions
+### 定义
 
-For the purposes of these Terms and Conditions:
+就本服务条款而言：
 
-- **Affiliate** means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
+- **关联方** 指控制一方、被一方控制或与一方共同受控制的实体，其中“控制”指拥有50%或以上股份、股权或其他有权投票选举董事或其他管理人员的证券的所有权。
 
-- **Country** refers to: California, United States
+- **公司**（在本协议中称为"公司"、"我们"或"我们的"）指本服务的运营方。
 
-- **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to AstroWind LLC, 1 Cupertino, CA 95014.
+- **设备** 指可以访问本服务的任何设备，如计算机、手机或平板电脑。
 
-- **Device** means any device that can access the Service such as a computer, a cellphone or a digital tablet.
+- **服务** 指本网站提供的所有功能与服务，包括但不限于酒店保洁质检系统的使用、数据存储、报表生成等。
 
-- **Service** refers to the Website.
+- **服务条款**（也称为“条款”）指这些构成您与公司之间关于使用本服务的完整协议的服务条款。
 
-- **Terms and Conditions** (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement is a Demo.
+- **第三方服务** 指由第三方提供的任何服务或内容（包括数据、信息、产品或服务），这些内容可能在本服务中显示、包含或提供。
 
-- **Third-party Social Media Service** means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
+- **网站** 指本服务官方网站，可通过本服务提供的网址访问。
 
-- **Website** refers to AstroWind, accessible from [https://astrowind.vercel.app](https://astrowind.vercel.app)
+- **您** 指访问或使用本服务的个人，或代表该个人访问或使用本服务的公司或其他法律实体（视情况而定）。
 
-- **You** means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
+## 接受条款
 
-## Acknowledgment
+本服务条款管辖本服务的使用，并构成您与公司之间的协议。本条款规定了所有用户在使用本服务时的权利和义务。
 
-These are the Terms and Conditions governing the use of this Service and the agreement that operates between You and the Company. These Terms and Conditions set out the rights and obligations of all users regarding the use of the Service.
+您访问和使用本服务的前提是您接受并遵守这些条款。本条款适用于所有访问或使用本服务的访客、用户及其他人员。
 
-Your access to and use of the Service is conditioned on Your acceptance of and compliance with these Terms and Conditions. These Terms and Conditions apply to all visitors, users and others who access or use the Service.
+通过访问或使用本服务，即表示您同意受这些条款的约束。如果您不同意本条款的任何部分，则不得访问本服务。
 
-By accessing or using the Service You agree to be bound by these Terms and Conditions. If You disagree with any part of these Terms and Conditions then You may not access the Service.
+您声明并保证您已年满18周岁。公司不允许未满18周岁的人员使用本服务。
 
-You represent that you are over the age of 18\. The Company does not permit those under 18 to use the Service.
+您访问和使用本服务还须接受并遵守公司的《隐私政策》。我们的《隐私政策》描述了我们在您使用本网站时收集、使用和披露您个人信息的政策和程序，并告知您您的隐私权以及法律如何保护您。在使用本服务前，请仔细阅读我们的《隐私政策》。
 
-Your access to and use of the Service is also conditioned on Your acceptance of and compliance with the Privacy Policy of the Company. Our Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your personal information when You use the Application or the Website and tells You about Your privacy rights and how the law protects You. Please read Our Privacy Policy carefully before using Our Service.
+## 第三方链接
 
-## Links to Other Websites
+我们的服务可能包含指向第三方网站或服务的链接，这些网站或服务并非由公司拥有或控制。
 
-Our Service may contain links to third-party web sites or services that are not owned or controlled by the Company.
+公司对任何第三方网站或服务的内容、隐私政策或做法没有控制权，也不承担任何责任。您进一步确认并同意，公司不对因使用或依赖任何此类网站或服务上或通过其提供的任何内容、商品或服务而造成的任何损害或损失承担直接或间接的责任。
 
-The Company has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that the Company shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such web sites or services.
+我们强烈建议您阅读您访问的任何第三方网站或服务的条款和隐私政策。
 
-We strongly advise You to read the terms and conditions and privacy policies of any third-party web sites or services that You visit.
+## 服务终止
 
-## Termination
+我们有权在您违反本服务条款的情况下，立即终止或暂停您的访问权限，无需事先通知或承担责任。
 
-We may terminate or suspend Your access immediately, without prior notice or liability, for any reason whatsoever, including without limitation if You breach these Terms and Conditions.
+终止后，您使用本服务的权利将立即终止。
 
-Upon termination, Your right to use the Service will cease immediately.
+## 责任限制
 
-## Limitation of Liability
+在适用法律允许的最大范围内，公司及其供应商在本条款任何规定下的全部责任，以及您对上述所有问题的唯一救济，应限于您通过本服务实际支付的金额，或若您未通过本服务购买任何东西，则限于100元人民币。
 
-Notwithstanding any damages that You might incur, the entire liability of the Company and any of its suppliers under any provision of this Terms and Your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by You through the Service or 100 USD if You haven't purchased anything through the Service.
+在适用法律允许的最大范围内，公司及其供应商在任何情况下均不对任何特殊的、附带的、间接的或后果性的损害赔偿承担责任（包括但不限于利润损失、数据或其他信息丢失、业务中断、人身伤害、隐私泄露，或因使用或无法使用本服务、与本服务配合使用的第三方软件和/或第三方硬件，或与本条款任何规定相关的其他原因而产生的损害赔偿），即使公司或任何供应商已被告知可能发生此类损害赔偿，且即使救济未能实现其基本目的。
 
-To the maximum extent permitted by applicable law, in no event shall the Company or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever (including, but not limited to, damages for loss of profits, loss of data or other information, for business interruption, for personal injury, loss of privacy arising out of or in any way related to the use of or inability to use the Service, third-party software and/or third-party hardware used with the Service, or otherwise in connection with any provision of this Terms), even if the Company or any supplier has been advised of the possibility of such damages and even if the remedy fails of its essential purpose.
+## 免责声明
 
-Some states do not allow the exclusion of implied warranties or limitation of liability for incidental or consequential damages, which means that some of the above limitations may not apply. In these states, each party's liability will be limited to the greatest extent permitted by law.
+本服务以“现状”和“按现有状态”提供，并包含所有故障和缺陷，不作任何形式的保证。在适用法律允许的最大范围内，公司代表自身及其关联方及其各自的许可方和服务提供商，明确放弃与本服务相关的所有保证，无论是明示、默示、法定还是其他形式的保证，包括所有关于适销性、特定用途适用性、所有权和不侵权的默示保证，以及可能因交易习惯、履约过程、使用或贸易惯例而产生的保证。在不限于前述规定的情况下，公司不提供任何保证或承诺，也不作任何形式的陈述，表明本服务将满足您的要求、实现任何预期结果、与其他任何软件、应用程序、系统或服务兼容或配合使用、无中断运行、满足任何性能或可靠性标准或无错误，或任何错误或缺陷可以或将会被纠正。
 
-## "AS IS" and "AS AVAILABLE" Disclaimer
+在不限于前述规定的情况下，公司及其任何提供商均不作任何形式的明示或默示陈述或保证：(i) 关于本服务或其包含的信息、内容、材料或产品的运行或可用性；(ii) 本服务将不间断或无错误；(iii) 通过本服务提供的任何信息或内容的准确性、可靠性或时效性；或 (iv) 本服务、其服务器、内容或代表公司发送的电子邮件不含病毒、脚本、特洛伊木马、蠕虫、恶意软件、定时炸弹或其他有害组件。
 
-The Service is provided to You "AS IS" and "AS AVAILABLE" and with all faults and defects without warranty of any kind. To the maximum extent permitted under applicable law, the Company, on its own behalf and on behalf of its Affiliates and its and their respective licensors and service providers, expressly disclaims all warranties, whether express, implied, statutory or otherwise, with respect to the Service, including all implied warranties of merchantability, fitness for a particular purpose, title and non-infringement, and warranties that may arise out of course of dealing, course of performance, usage or trade practice. Without limitation to the foregoing, the Company provides no warranty or undertaking, and makes no representation of any kind that the Service will meet Your requirements, achieve any intended results, be compatible or work with any other software, applications, systems or services, operate without interruption, meet any performance or reliability standards or be error free or that any errors or defects can or will be corrected.
+## 管辖法律
 
-Without limiting the foregoing, neither the Company nor any of the company's provider makes any representation or warranty of any kind, express or implied: (i) as to the operation or availability of the Service, or the information, content, and materials or products included thereon; (ii) that the Service will be uninterrupted or error-free; (iii) as to the accuracy, reliability, or currency of any information or content provided through the Service; or (iv) that the Service, its servers, the content, or e-mails sent from or on behalf of the Company are free of viruses, scripts, trojan horses, worms, malware, timebombs or other harmful components.
+本条款及您对本服务的使用，应受中华人民共和国法律管辖，并依据中华人民共和国法律解释，不适用其冲突法规则。
 
-Some jurisdictions do not allow the exclusion of certain types of warranties or limitations on applicable statutory rights of a consumer, so some or all of the above exclusions and limitations may not apply to You. But in such a case the exclusions and limitations set forth in this section shall be applied to the greatest extent enforceable under applicable law.
+## 争议解决
 
-## Governing Law
+如果您对本服务有任何疑问或争议，您同意首先通过友好协商的方式尝试非正式地解决争议。
 
-The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service. Your use of the Application may also be subject to other local, state, national, or international laws.
+## 可分割性与放弃
 
-## Disputes Resolution
+### 可分割性
 
-If You have any concern or dispute about the Service, You agree to first try to resolve the dispute informally by contacting the Company.
+如果本条款的任何规定被认定为不可执行或无效，该规定将在适用法律允许的最大范围内进行修改和解释，以实现该规定的目的，其余规定将继续完全有效。
 
-## For European Union (EU) Users
+### 放弃
 
-If You are a European Union consumer, you will benefit from any mandatory provisions of the law of the country in which you are resident in.
+除本条款另有规定外，未能行使权利或要求履行本条款项下的义务，不应影响一方此后行使该权利或要求该履行，对违约的放弃也不构成对任何后续违约的放弃。
 
-## United States Legal Compliance
+## 条款变更
 
-You represent and warrant that (i) You are not located in a country that is subject to the United States government embargo, or that has been designated by the United States government as a "terrorist supporting" country, and (ii) You are not listed on any United States government list of prohibited or restricted parties.
+我们保留随时自行修改或替换这些条款的权利。如果修订是重大的，我们将尽合理努力，在任何新条款生效前至少提前30天发出通知。何为重大变更将由我们自行决定。
 
-## Severability and Waiver
+在修订生效后继续访问或使用我们的服务，即表示您同意受修订后条款的约束。如果您不同意新条款的全部或部分内容，请停止使用本网站和服务。
 
-### Severability
 
-If any provision of these Terms is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law and the remaining provisions will continue in full force and effect.
-
-### Waiver
-
-Except as provided herein, the failure to exercise a right or to require performance of an obligation under these Terms shall not effect a party's ability to exercise such right or require such performance at any time thereafter nor shall the waiver of a breach constitute a waiver of any subsequent breach.
-
-## Translation Interpretation
-
-These Terms and Conditions may have been translated if We have made them available to You on our Service. You agree that the original English text shall prevail in the case of a dispute.
-
-## Changes to These Terms and Conditions
-
-We reserve the right, at Our sole discretion, to modify or replace these Terms at any time. If a revision is material We will make reasonable efforts to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at Our sole discretion.
-
-By continuing to access or use Our Service after those revisions become effective, You agree to be bound by the revised terms. If You do not agree to the new terms, in whole or in part, please stop using the website and the Service.
-
-## Contact Us
-
-If you have any questions about these Terms and Conditions, You can contact us:
-
-- By email: somecoolemail@domain.com

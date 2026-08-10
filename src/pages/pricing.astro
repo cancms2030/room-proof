@@ -8,7 +8,7 @@ import Features3 from '~/components/widgets/Features3.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Pricing',
+  title: '定价方案 - 净证',
 };
 ---
 
@@ -16,95 +16,98 @@ const metadata = {
   <!-- HeroText Widget ******************* -->
 
   <HeroText
-    tagline="Pricing"
-    title="Stellar Pricing for Every Journey"
-    subtitle="Choose the perfect plan that aligns with your cosmic goals."
+    tagline="定价方案"
+    title="为每一家酒店提供合适的定价"
+    subtitle="按需付费，灵活选择，让数字化保洁管理触手可及"
   />
 
   <!-- Pricing Widget ******************* -->
 
   <Prices
-    title="Our prices"
-    subtitle="Only pay for what you need"
+    title="选择适合你的方案"
+    subtitle="按年付费更优惠，联系客服获取定制报价"
     prices={[
       {
-        title: 'basic',
-        subtitle: 'Optimal choice for personal use',
-        price: 29,
-        period: 'per month',
+        title: '基础版',
+        subtitle: '适合单体酒店或小型民宿',
+        price: 99,
+        period: '/月',
         items: [
           {
-            description: 'Etiam in libero, et volutpat',
+            description: '✅ 强制水印拍照',
           },
           {
-            description: 'Aenean ac nunc dolor tristique',
+            description: '✅ 6个标准检查点位',
           },
           {
-            description: 'Cras scelerisque accumsan lib',
+            description: '✅ 基础数据看板',
           },
           {
-            description: 'In hac habitasse',
+            description: '✅ 支持 5 个保洁员账号',
           },
         ],
         callToAction: {
           target: '_blank',
-          text: 'Get started',
-          href: '#',
+          text: '立即试用',
+          href: '/contact',
         },
       },
       {
-        title: 'standard',
-        subtitle: 'Optimal choice for small teams',
-        price: 69,
-        period: 'Per Month',
+        title: '标准版',
+        subtitle: '适合中大型酒店',
+        price: 299,
+        period: '/月',
         items: [
           {
-            description: 'Proin vel laoreet',
+            description: '✅ 基础版所有功能',
           },
           {
-            description: 'Ut efficitur habitasse egestas',
+            description: '✅ 自定义检查点位',
           },
           {
-            description: 'Volutpat hac curabitur',
+            description: '✅ 员工绩效排行榜',
           },
           {
-            description: 'Pellentesque blandit ut nibh',
+            description: '✅ 支持 20 个保洁员账号',
           },
           {
-            description: 'Donec fringilla sem',
+            description: '✅ 标准客服支持',
           },
         ],
         callToAction: {
           target: '_blank',
-          text: 'Get started',
-          href: '#',
+          text: '立即试用',
+          href: '/contact',
         },
         hasRibbon: true,
-        ribbonTitle: 'popular',
+        ribbonTitle: '最受欢迎',
       },
       {
-        title: 'premium',
-        subtitle: 'Optimal choice for companies',
-        price: 199,
-        period: 'Per Month',
+        title: '企业版',
+        subtitle: '适合连锁酒店集团',
+        price: 599,
+        period: '/月',
         items: [
           {
-            description: 'Curabitur suscipit risus',
+            description: '✅ 标准版所有功能',
           },
           {
-            description: 'Aliquam habitasse malesuada',
+            description: '✅ AI 异常检测（可选）',
           },
           {
-            description: 'Suspendisse sit amet blandit',
+            description: '✅ 多门店统一管理',
           },
           {
-            description: 'Suspendisse auctor blandit dui',
+            description: '✅ 无限员工账号',
+          },
+          {
+            description: '✅ 专属客户经理支持',
           },
         ],
         callToAction: {
           target: '_blank',
-          text: 'Get started',
-          href: '#',
+          text: '立即试用',
+          href: '/contact',
         },
       },
     ]}
@@ -113,39 +116,39 @@ const metadata = {
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Price-related features"
-    subtitle="Discover the advantages of choosing our plans"
+    title="为什么选择净证"
+    subtitle="不只是工具，更是酒店保洁管理的数字化助手"
     columns={2}
     items={[
       {
-        title: 'Tiered Pricing Plans',
-        description: 'Choose from a range of pricing plans designed to accommodate different budgets and requirements.',
-        icon: 'tabler:stairs',
+        title: '💰 轻量化起步',
+        description: '无需昂贵的AI设备，从水印相机SaaS服务起步，成本极低，快速验证效果。',
+        icon: 'tabler:coin',
       },
       {
-        title: 'Transparent Pricing',
-        description: 'Clearly displayed pricing details for each plan, with no hidden costs or unexpected charges.',
-        icon: 'tabler:flip-vertical',
+        title: '📱 强制水印拍照',
+        description: '时间戳精确到秒、房间号自动关联，杜绝旧图顶替，确保每张照片真实可追溯。',
+        icon: 'tabler:camera',
       },
       {
-        title: 'Secure Payment Methods',
-        description: 'Secure payment gateways to protect your financial information during transactions.',
-        icon: 'tabler:shield-lock',
+        title: '🔍 异常自动过滤',
+        description: '系统自动筛选问题照片，主管只看异常，合格照片直接归档，审图效率提升60%。',
+        icon: 'tabler:filter',
       },
       {
-        title: 'Instant Access',
-        description: `Immediate access to your chosen plan's features and templates upon subscription.`,
-        icon: 'tabler:accessible',
+        title: '📊 数据驱动管理',
+        description: '自动生成员工绩效、通过率、返工率报表，月底10分钟导出，告别手工翻聊天记录。',
+        icon: 'tabler:chart-bar',
       },
       {
-        title: 'Upgrade Value',
-        description: 'Upgrade to higher-tier plans to unlock more features and benefits for an enhanced experience.',
-        icon: 'tabler:chevrons-up',
+        title: '🔄 全链路闭环',
+        description: '从扫码接单、强制水印拍照，到在线审核、数据看板，一站式数字化解决方案。',
+        icon: 'tabler:arrows-join-2',
       },
       {
-        title: '24H support',
-        description: 'Questions answered via live chat, email or phone, every calendar day.',
-        icon: 'tabler:headset',
+        title: '🎯 持续迭代',
+        description: '深入酒店一线，倾听真实声音，产品迭代始终以用户需求为中心，上线即用。',
+        icon: 'tabler:refresh',
       },
     ]}
     classes={{ container: 'max-w-5xl' }}
@@ -154,76 +157,60 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="A guided journey from plans to creativity"
-    tagline="simplified process"
+    title="三步开启数字化保洁管理"
+    tagline="简单上手，快速见效"
     isReversed={true}
     items={[
       {
-        title: 'Explore plans',
+        title: '注册账号',
         icon: 'tabler:number-1',
       },
       {
-        title: 'Select a plan',
+        title: '配置酒店与保洁员',
         icon: 'tabler:number-2',
       },
       {
-        title: 'Sign Up / Log In',
+        title: '开始拍照质检',
         icon: 'tabler:number-3',
-      },
-      {
-        title: 'Review order',
-        icon: 'tabler:number-4',
-      },
-      {
-        title: 'Enter payment details',
-        icon: 'tabler:number-5',
-      },
-      {
-        title: 'Confirmation',
-        icon: 'tabler:number-6',
-      },
-      {
-        title: 'Download and start using the template(s)',
-        icon: 'tabler:number-7',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1536816579748-4ecb3f03d72a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      alt: '三步开启数字化保洁管理',
     }}
   />
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Pricing FAQs"
-    subtitle="Choosing the right plan is important, and we're here to answer your questions. If you have queries about our pricing options, you're in the right place."
+    title="常见问题"
+    subtitle="关于定价和服务的疑问，我们为您一一解答"
     columns={1}
     items={[
       {
-        title: 'Do the plans come with customer support?',
+        title: '净证系统适合多大规模的酒店？',
         description:
-          'Absolutely, all plans include access to our dedicated customer support to assist you with any queries or concerns.',
+          '净证适用于各类酒店，从单体酒店、精品民宿到连锁酒店集团均可使用。基础版适合小型酒店，标准版适合中大型酒店，企业版支持多门店统一管理。',
       },
       {
-        title: 'Is there a trial period for the different plans?',
+        title: '是否提供免费试用？',
         description:
-          "Unfortunately, we don't offer trial periods for the plans. However, you can check out our demo section to preview the quality of our templates.",
+          '我们提供首月免费试用，让您充分体验系统功能。试用期间所有功能均可使用，且无需绑定任何付费方式。',
       },
       {
-        title: 'Can I switch between plans?',
+        title: '可以随时升级或降级套餐吗？',
         description:
-          'Certainly! You can easily upgrade or downgrade your plan, at any time, to find the one that best suits your evolving requirements.',
+          '当然可以。您可以根据业务发展需要，随时调整套餐方案，灵活适应酒店规模变化。',
       },
       {
-        title: 'What payment methods do you accept?',
+        title: '是否需要购买昂贵的AI设备？',
         description:
-          'We accept major credit cards and online payment methods to ensure a convenient and secure transaction process.',
+          '不需要。净证采用轻量化方案，从水印相机SaaS服务起步，保洁员使用手机即可完成拍照上传，无需额外硬件投入。',
       },
       {
-        title: 'Are there any hidden fees beyond the displayed cost?',
+        title: '数据安全和隐私如何保障？',
         description:
-          'No, the subscription cost covers all the features and templates listed under each plan. There are no hidden fees or extra charges.',
+          '我们采用企业级数据加密技术，所有照片和数据均安全存储。系统权限分级管理，确保只有授权人员可访问质检记录。',
       },
     ]}
   />
@@ -231,13 +218,13 @@ const metadata = {
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    title="Ready to boost your projects?"
-    subtitle="Join our community of satisfied customers who have transformed their work with our templates."
+    title="立即开启数字化保洁管理"
+    subtitle="告别低效的微信传图，让每一间客房的清洁都有据可查"
     actions={[
       {
         variant: 'primary',
-        text: 'Get started now',
-        href: '/',
+        text: '免费试用',
+        href: '/contact',
       },
     ]}
   />

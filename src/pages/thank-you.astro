@@ -1,0 +1,46 @@
+---
+import Layout from '~/layouts/Layout.astro';
+
+const metadata = {
+  title: '提交成功 - 净证',
+  description: '您的咨询已提交成功，我们将在24小时内与您联系。',
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="flex min-h-[60vh] items-center justify-center bg-white py-16 dark:bg-slate-900">
+    <div class="container mx-auto px-4 text-center">
+      <div class="mx-auto max-w-2xl">
+        <!-- 成功图标 -->
+        <div class="mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-emerald-100 text-6xl dark:bg-emerald-900/30">
+          ✅
+        </div>
+
+        <h1 class="text-3xl font-bold text-primary-600 md:text-4xl dark:text-primary-400">
+          提交成功！
+        </h1>
+        <p class="mt-4 text-lg text-gray-500 dark:text-gray-400">
+          感谢您对净证的关注！我们将在 <strong class="text-primary-500 dark:text-primary-400">24小时内</strong> 与您取得联系。
+        </p>
+        <p class="mt-2 text-sm text-gray-400 dark:text-gray-500">
+          请保持手机畅通，我们的顾问会尽快联系您。
+        </p>
+
+        <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <a
+            href="/"
+            class="inline-block rounded-lg bg-secondary-500 px-8 py-3 text-white transition-all hover:bg-secondary-600 hover:shadow-lg"
+          >
+            返回首页
+          </a>
+          <a
+            href="/features/"
+            class="inline-block rounded-lg border border-gray-300 px-8 py-3 text-gray-600 transition-all hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-slate-800"
+          >
+            了解功能
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

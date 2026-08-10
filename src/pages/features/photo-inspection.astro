@@ -1,0 +1,141 @@
+---
+import Layout from '~/layouts/Layout.astro';
+
+const frontmatter = {
+  title: '酒店查房软件_客房清洁拍照记录_在线审核-净证',
+  description:
+    '净证客房质检系统，支持保洁员拍照提交清洁结果、主管在线审核、一键标记返工。让酒店查房有图有真相，责任到人。',
+};
+---
+
+<Layout {frontmatter}>
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <!-- H1 -->
+      <h1 class="text-3xl font-bold text-blue-700 md:text-4xl">
+        📷 拍照 + 审核，让每一间客房都经得起检查
+      </h1>
+      <p class="mt-4 text-lg text-gray-500">
+        从保洁员拍照上传到主管在线审核，形成完整质检闭环
+      </p>
+
+      <hr class="my-12 border-gray-200" />
+
+      <!-- H2：三步闭环 -->
+      <h2 class="text-2xl font-bold text-blue-700 md:text-3xl">
+        三步完成客房质检闭环
+      </h2>
+      <div class="mt-8 space-y-8">
+        <!-- 步骤1 -->
+        <div class="flex gap-6 rounded-xl border border-gray-100 p-6 shadow-sm">
+          <div
+            class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-blue-100 text-xl font-bold text-blue-600"
+          >
+            1
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-blue-700">保洁员拍照上传</h3>
+            <p class="mt-1 text-gray-500">
+              保洁员完成客房清洁后，打开净证系统对房间关键区域（床铺、卫生间、地面、桌面）进行拍照上传。
+              <span
+                class="mt-2 inline-block rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-600"
+              >
+                自动添加时间水印
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <!-- 步骤2 -->
+        <div class="flex gap-6 rounded-xl border border-gray-100 p-6 shadow-sm">
+          <div
+            class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-emerald-100 text-xl font-bold text-emerald-600"
+          >
+            2
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-blue-700" id="review">主管在线审核</h3>
+            <p class="mt-1 text-gray-500">
+              主管通过手机或电脑随时查看保洁员提交的照片，一键标注"通过"或"返工"。审核意见自动推送给对应保洁员。
+              <span
+                class="mt-2 inline-block rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-600"
+              >
+                责任到人，有据可依
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <!-- 步骤3 -->
+        <div class="flex gap-6 rounded-xl border border-gray-100 p-6 shadow-sm">
+          <div
+            class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-purple-100 text-xl font-bold text-purple-500"
+          >
+            3
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-blue-700">数据自动记录</h3>
+            <p class="mt-1 text-gray-500">
+              所有审核记录自动归档，关联到具体客房、保洁员、主管。历史数据永久保存，随时可追溯。
+              <span
+                class="mt-2 inline-block rounded-full bg-purple-50 px-3 py-1 text-xs font-medium text-purple-500"
+              >
+                永久追溯，永不丢失
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12 border-gray-200" />
+
+      <!-- H2：对比表格 -->
+      <h2 class="text-2xl font-bold text-blue-700 md:text-3xl">
+        对比传统查房方式
+      </h2>
+      <div class="mt-6 overflow-x-auto">
+        <table class="w-full border-collapse text-sm">
+          <thead>
+            <tr class="bg-blue-700 text-white">
+              <th class="px-4 py-3 text-left">对比维度</th>
+              <th class="px-4 py-3 text-left">微信群查房</th>
+              <th class="px-4 py-3 text-left">净证系统</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium">记录保存</td>
+              <td class="px-4 py-3 text-gray-400">消息易被冲走，无法归档</td>
+              <td class="px-4 py-3 font-medium text-emerald-600">永久保存，随时可查</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium">证据链</td>
+              <td class="px-4 py-3 text-gray-400">无图无真相，易扯皮</td>
+              <td class="px-4 py-3 font-medium text-emerald-600">拍照留痕，时间水印</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium">责任追溯</td>
+              <td class="px-4 py-3 text-gray-400">无法关联具体责任人</td>
+              <td class="px-4 py-3 font-medium text-emerald-600">自动关联，责任到人</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 font-medium">数据统计</td>
+              <td class="px-4 py-3 text-gray-400">手工统计，费时费力</td>
+              <td class="px-4 py-3 font-medium text-emerald-600">自动生成，一键导出</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- CTA -->
+      <div class="mt-12 text-center">
+        <a
+          href="/contact/"
+          class="inline-block rounded-lg bg-blue-600 px-10 py-4 text-lg font-semibold text-white transition-all hover:bg-blue-700 hover:shadow-lg"
+        >
+          🚀 预约演示，体验有证据的管理
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

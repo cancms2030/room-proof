@@ -1,34 +1,34 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: 净证
+  site: 'https://yourdomain.com' # 【待替换】
   base: '/'
-  trailingSlash: false
-
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  trailingSlash: true
+  defaultLanguage: 'zh-CN'
+  googleSiteVerificationId: '' # 【待替换】
 
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: 净证-酒店保洁管理系统_客房质检软件
+    template: '%s — 净证'
+  description: "让每一间客房的清洁，都有据可查。净证客房保洁质检系统，专为中小酒店设计，支持拍照提交、主管在线审核、一键生成报表。"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: 净证
     images:
       - url: '~/assets/images/default.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@arthelokyo'
-    site: '@arthelokyo'
+    handle: '@yourhandle' # 【待替换】
+    site: '@yourhandle' # 【待替换】
     cardType: summary_large_image
 
 i18n:
-  language: en
+  language: zh-CN
   textDirection: ltr
 
 apps:

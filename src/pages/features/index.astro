@@ -1,0 +1,68 @@
+---
+import Layout from '~/layouts/Layout.astro';
+
+const frontmatter = {
+  title: '酒店保洁管理系统功能介绍_客房质检软件功能-净证',
+  description:
+    '净证客房保洁质检系统提供拍照留痕、在线审核、自动报表三大核心功能，帮助中小酒店实现数字化保洁管理。',
+};
+---
+
+<Layout {frontmatter}>
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="mb-12 text-center">
+        <h1 class="text-3xl font-bold text-blue-700 md:text-4xl">
+          专为中小酒店设计的保洁管理功能
+        </h1>
+        <p class="mx-auto mt-4 max-w-2xl text-gray-500">
+          每一个功能都源自一线酒店管理者的真实需求
+        </p>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-3">
+        <a
+          href="/features/photo-inspection/"
+          class="group rounded-xl border border-gray-200 p-8 transition-all hover:shadow-xl hover:-translate-y-1"
+        >
+          <div class="text-5xl">📷</div>
+          <h2 class="mt-4 text-xl font-bold text-blue-700 group-hover:text-blue-600">
+            强制水印拍照
+          </h2>
+          <p class="mt-2 text-gray-500">自动叠加时间、房号水印，杜绝旧图顶替，确保检查真实可信</p>
+          <span class="mt-4 inline-block text-sm font-medium text-blue-600">了解详情 →</span>
+        </a>
+
+        <a
+          href="/features/report-center/"
+          class="group rounded-xl border border-gray-200 p-8 transition-all hover:shadow-xl hover:-translate-y-1"
+        >
+          <div class="text-5xl">📊</div>
+          <h2 class="mt-4 text-xl font-bold text-blue-700 group-hover:text-blue-600">
+            数据看板与报表
+          </h2>
+          <p class="mt-2 text-gray-500">一键生成员工绩效、通过率报表，用数据驱动管理决策</p>
+          <span class="mt-4 inline-block text-sm font-medium text-blue-600">了解详情 →</span>
+        </a>
+
+        <div class="rounded-xl border border-gray-200 p-8 opacity-60">
+          <div class="text-5xl">🔔</div>
+          <h2 class="mt-4 text-xl font-bold text-blue-700">
+            更多功能（即将上线）
+          </h2>
+          <p class="mt-2 text-gray-500">智能排班、耗材管理、员工培训...持续迭代中</p>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="mt-12 text-center">
+        <a
+          href="/contact/"
+          class="inline-block rounded-lg bg-blue-600 px-10 py-4 text-lg font-semibold text-white transition-all hover:bg-blue-700 hover:shadow-lg"
+        >
+          🚀 预约演示，体验数字化保洁管理
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

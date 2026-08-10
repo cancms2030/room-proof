@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "jz-official-site",
   "version": "1.0.0-beta.65",
   "description": "AstroWind: A free template using Astro 7 and Tailwind CSS v4. Astro starter theme.",
   "type": "module",
@@ -31,6 +31,7 @@
     "astro-seo": "^1.1.0",
     "limax": "4.2.3",
     "lodash.merge": "^4.6.2",
+    "resend": "^6.18.1",
     "unpic": "^4.2.2"
   },
   "devDependencies": {
