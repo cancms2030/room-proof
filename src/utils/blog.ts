@@ -67,7 +67,7 @@ const getNormalizedPost = async (post: CollectionEntry<'blog'>): Promise<Post> =
   return {
     id: id,
     slug: slug,
-    permalink: await generatePermalink({ id, slug, publishDate, category: category?.slug }),
+    permalink: await generatePermalink({ id, slug, publishDate, category: undefined }),
 
     publishDate: publishDate,
     updateDate: undefined,

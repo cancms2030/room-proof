@@ -22,7 +22,7 @@ import type { MetaData as MetaDataType } from '~/types';
 
 import Header from '~/components/widgets/Header.astro';
 import Footer from '~/components/widgets/Footer.astro';
-import Announcement from '~/components/widgets/Announcement.astro';
+// import Announcement from '~/components/widgets/Announcement.astro';
 
 import { headerData, footerData } from '~/navigation';
 
@@ -51,7 +51,7 @@ const { language, textDirection } = I18N;
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 
     <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json" set:html>
+    <script type="application/ld+json" set:html is:inline>
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
@@ -66,7 +66,7 @@ const { language, textDirection } = I18N;
       }
     </script>
 
-    <script type="application/ld+json" set:html>
+    <script type="application/ld+json" set:html is:inline>
       {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",

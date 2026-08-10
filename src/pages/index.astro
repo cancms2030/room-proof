@@ -2,7 +2,7 @@
 // import Layout from '~/layouts/Layout.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
-const frontmatter = {
+const metadata = {
   title: '酒店保洁管理系统_客房质检软件_让清洁有据可查-净证',
   description:
     '净证专为中小酒店设计，拍照留痕、在线审核、自动报表，告别微信群+Excel的原始管理模式。让每一间客房的清洁都有据可查。',
@@ -44,7 +44,7 @@ const solutions = [
 ];
 ---
 
-<Layout {frontmatter}>
+<Layout {metadata}>
   <!-- ===== Hero 区 ===== -->
   <section class="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 py-20 md:py-32">
     <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle, #ffffff 1px, transparent 1px); background-size: 40px 40px;"></div>

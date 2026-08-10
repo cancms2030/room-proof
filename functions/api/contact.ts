@@ -197,6 +197,10 @@ function jsonResponse(data: Record<string, unknown>, status: number = 200): Resp
 // Cloudflare Pages Function 入口
 // ---------------------------------------------------------------------------
 
+// 临时类型定义，因为 @cloudflare/workers-types 可能未安装
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type PagesFunction<Env = any> = (context: { request: Request; env: Env }) => Promise<Response>;
+
 export const onRequestPost: PagesFunction<{ RESEND_API_KEY: string; EMAIL_DOMAIN: string; TO_EMAIL: string }> = async ({ request, env }) => {
   try {
     // --- 1. 解析请求数据 ---

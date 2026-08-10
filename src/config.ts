@@ -20,7 +20,7 @@ export const SITE = {
   defaultLanguage: 'zh-CN',
 
   /** 站点域名（上线后替换为实际域名） */
-  siteUrl: 'https://yourdomain.com' /* 【待替换】 */,
+  siteUrl: 'https://room-proof.cancms.com' /* 【待替换】 */,
 
   /** 站点基准路径 */
   base: '/',

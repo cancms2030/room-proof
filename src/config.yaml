@@ -1,6 +1,6 @@
 site:
   name: 净证
-  site: 'https://yourdomain.com' # 【待替换】
+  site: 'https://room-proof.cancms.com' # 【待替换】
   base: '/'
   trailingSlash: true
   defaultLanguage: 'zh-CN'
