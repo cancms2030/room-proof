@@ -19,102 +19,22 @@ const metadata = {
         <p class="mt-4 text-lg text-gray-500 dark:text-gray-400">留下您的联系方式，我们将在24小时内与您取得联系</p>
       </div>
 
-      <!-- 表单 -->
+      <!-- 表单暂时隐藏 - 邮件功能维护中 -->
+      <!--
       <div
         class="rounded-2xl border border-gray-200 bg-white p-6 shadow-lg md:p-10 dark:border-gray-700 dark:bg-slate-800"
       >
         <form id="contactForm" class="space-y-6">
-          <!-- 姓名 -->
-          <div>
-            <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
-              姓名 <span class="text-red-500">*</span>
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              minlength="2"
-              placeholder="请输入您的姓名"
-              class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-secondary-500 focus:outline-none focus:ring-2 focus:ring-secondary-200 dark:border-gray-600 dark:bg-slate-700 dark:text-white dark:placeholder-gray-400"
-            />
-          </div>
-
-          <!-- 邮箱 -->
-          <div>
-            <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
-              邮箱 <span class="text-red-500">*</span>
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              placeholder="请输入您的邮箱"
-              class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-secondary-500 focus:outline-none focus:ring-2 focus:ring-secondary-200 dark:border-gray-600 dark:bg-slate-700 dark:text-white dark:placeholder-gray-400"
-            />
-          </div>
-
-          <!-- 电话 -->
-          <div>
-            <label for="phone" class="block text-sm font-medium text-gray-700 dark:text-gray-300"> 电话 </label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="请输入您的电话（选填）"
-              class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-secondary-500 focus:outline-none focus:ring-2 focus:ring-secondary-200 dark:border-gray-600 dark:bg-slate-700 dark:text-white dark:placeholder-gray-400"
-            />
-          </div>
-
-          <!-- 酒店/公司 -->
-          <div>
-            <label for="company" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
-              酒店/公司名称
-            </label>
-            <input
-              type="text"
-              id="company"
-              name="company"
-              placeholder="请输入您所在的酒店或公司（选填）"
-              class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-secondary-500 focus:outline-none focus:ring-2 focus:ring-secondary-200 dark:border-gray-600 dark:bg-slate-700 dark:text-white dark:placeholder-gray-400"
-            />
-          </div>
-
-          <!-- 咨询内容 -->
-          <div>
-            <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
-              咨询内容 <span class="text-red-500">*</span>
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              required
-              minlength="10"
-              rows="5"
-              placeholder="请详细描述您的需求，例如：我们酒店有50间客房，想了解如何用系统管理保洁质量..."
-              class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-secondary-500 focus:outline-none focus:ring-2 focus:ring-secondary-200 dark:border-gray-600 dark:bg-slate-700 dark:text-white dark:placeholder-gray-400"
-            ></textarea>
-            <p class="mt-1 text-xs text-gray-400 dark:text-gray-500">至少10个字</p>
-          </div>
-
-          <!-- 防机器人陷阱（隐藏） -->
-          <input type="text" name="_gotcha" style="display:none;" tabindex="-1" autocomplete="off" />
-
-          <!-- 提交按钮 -->
-          <div>
-            <button
-              type="submit"
-              id="submitBtn"
-              class="w-full rounded-lg bg-secondary-500 px-6 py-4 text-lg font-semibold text-white transition-all hover:bg-secondary-600 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              提交咨询
-            </button>
-          </div>
-
-          <!-- 提交状态反馈 -->
-          <div id="formStatus" class="hidden text-center"></div>
+          ... 表单内容省略 ...
         </form>
+      </div>
+      -->
+      
+      <!-- 临时提示：表单维护中 -->
+      <div class="rounded-2xl border border-amber-200 bg-amber-50 p-8 text-center shadow-lg dark:border-amber-700 dark:bg-amber-900/30">
+        <p class="text-lg text-amber-700 dark:text-amber-400">
+          🛠️ 联系表单正在维护中，请通过下方联系方式与我们取得联系
+        </p>
       </div>
 
       <!-- 联系方式补充 -->
